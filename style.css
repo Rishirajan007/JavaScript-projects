@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+   background-color:  #d6f6d6;
+   font-family: "Poppins", sans-serif;
+   margin: 0;   
+}
+
+main{
+   padding: 0 16px; 
+}
+.focus{
+    font-size: 64px;
+    color: rgb(37, 216, 37);
+    font-weight: bold;
+    text-align: center;
+}
+.today {
+    color: #2b1818;
+    
+}
+.app-container{ 
+    background-color: #fefefe;
+    max-width: 660px;
+    margin-inline: auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.123);
+    margin-bottom: 40px;
+
+}
+.sub-title {
+    font-weight: bold;
+    font-size: 32px; 
+     
+}
+.sub-title span{
+    
+vertical-align: middle;
+   
+}
+.progress-lebel{
+font-weight: bold;
+font-size: 16px;
+color: grey;
+margin-top: 25px;
+margin-bottom: 18px;
+}
+.progress-bar{
+    
+    height: 30px;
+   background-color: rgb(208, 255, 218);
+   border-radius: 20px;
+    margin-bottom: 44px;
+}
+.progress-value{
+     width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(16, 198, 56);
+    font-weight: 500;
+    font-size: 10px;
+    color: #EEFFE0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+   
+}
+.progress-value span{
+    padding-left: 16px;
+    min-width: max-content;
+}
+
+.error-lebal{
+    color: #FF5151;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    
+}
+.show-error .error-lebal{
+    display: block;
+} 
+.goal-container{
+     border: 1px #0000001A;
+     box-shadow: 0 0 10px 1px rgb(232, 228, 228);
+    
+     height: 82px;
+     border-radius: 17px;
+     display: flex;
+     align-items: center;
+     padding: 0  20px;
+     background-color: #FFFFFF;
+     margin-bottom: 46px;
+     
+
+}
+
+.custom-checkbox{
+    border: 2px solid #61481C4D;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.completed .custom-checkbox{
+    background-color: #48A300;
+    border: #48A300;
+   
+}
+.check-icon{
+    display: none;
+}
+
+.completed .check-icon{
+    display: block;
+}
+.goal-input{
+    margin-left: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    align-self: stretch;
+    width: 100%;
+    font-weight: 500;
+    
+}
+.completed .goal-input{
+    color: green;
+    text-decoration-line: line-through;
+}
+.goal-input::placeholder{
+    color: rgb(112, 117, 112);
+    
+}
+.motivation-text{
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.creator-text{
+     font-weight: 500;
+    font-size: 10px;
+    color: #858585;
+    text-align: center;
+}
+
+
+@media (max-width:768px){
+    .focus{
+        font-size: 32px;
+    }
+
+    .app-container{
+        padding: 16px 32px;
+    }
+
+    .goal-container{
+      height: 48px;
+      margin-bottom: 24px;
+      border-radius: 14px;
+      
+
+    }
+    .custom-checkbox{
+        height: 20px;
+        width: 20px;
+    }
+
+    .motivation-text{
+        margin-bottom: 30px;
+    }
+
+    .progress-bar{
+        height: 20px;
+    }
+}
+
+
